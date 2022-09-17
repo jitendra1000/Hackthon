@@ -235,11 +235,12 @@ const userRoutes = [
   {
     path: "/",
     exact: true,
-    component: () => <Redirect to="/ecommerce-add-product" />,
-  },
-]
+    component: () => <Redirect to="/dashboard" />
+  }, 
+];
 
 const authRoutes = [
+
   { path: "/logout", component: Logout },
   { path: "/login", component: Login },
   { path: "/forgot-password", component: ForgetPwd },
